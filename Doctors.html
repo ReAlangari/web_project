@@ -1,13 +1,55 @@
 <!DOCTYPE html>
-
 <html>
 <head>
-<title>Doctors</title>
+<title>Hope Hospital - Doctors</title>
+<link rel="stylesheet" href="#">
+<style>
+main  {
+background-color: #fffde7; 
+width:1000px;
+height:500px;
+border-style: outset;
+border-color:rgb(225, 235, 225);
+border: 1%;
+padding: 1%;
+margin :1%;
+float:right;
+}
+label{font-weight:bold; font-family: Arial }
+</style>
 </head>
 <body>
+<header>
+<img src = "images/logo.png" alt= "hospital logo">
+<h1>Hope Hospital</h1>
+<ul class ="breadcrumb">
+<li><a href= "#">Home page</a></li>
+<li>Doctors</li>
+</ul></header>
 
-<h1>This is a Heading</h1>
-<p>This is a paragraph.</p>
-
+<main>
+<h2>Doctors</h2>
+<label>Sort: </label>
+<select>
+<option>By department</option>
+<option>alphabetically</option>
+</select>
+ </main>
+ <aside>
+<ul>
+<li><a href="#" >Home page</a> </li>
+  <li><a href="#">Hospital</a></li>
+  <li><a href= doctors.html>Doctors</a></li>
+  <li><a href= patients.html >Patients</a></li>
+  <li><a href="#">Emergency</a></li>
+  <li><a href="#">Reports</a></li>
+  <li><a href="#">Nurses</a></li>
+  <li><a href="#">Staff</a></li>
+  <li><a href="#">Settings</a></li>
+ </ul>
+ </aside>
+ <footer>
+<p>All rights reserved ©2022 Hope Hospital</p>
+</footer>
 </body>
 </html>
