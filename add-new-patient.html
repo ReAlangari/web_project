@@ -1,59 +1,104 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Hope Hospital - Add new patient</title>
+<title>Hope Hospital - Add a new patient</title>
+<link rel="stylesheet" href="#">
+<style>
+button {
+background-color: gray; 
+border-style: outset;
+border-color:rgb(225, 235, 225)
+border:1%; 
+color:white; 
+padding:150x 32px ;
+text-align:center; 
+display:inline-block;
+font-size:22px;
+font-weight:bold;
+position:absolute;
+right:70px
+}
+main  {
+background-color: #fffde7; 
+width:1000px;
+height:500px;
+border-style: outset;
+border-color:rgb(225, 235, 225);
+border: 1%;
+padding: 1%;
+margin :1%;
+float:right;
+}
+input[type=text]{
+border:3px solid #555
+border-color:gray;
+width:100%
+padding:12px 20px;
+margin 8px 0;
+box-sizing: border-box;}
+form fieldset{
+height:400px;
+background-color: white;
+matgin:auto}
+label{font-weight:bold; font-family: Arial }
+</style>
 </head>
 <body>
 <header>
 <img src = "images/logo.png" alt= "hospital logo">
 <h1>Hope Hospital</h1>
-<nav><a href= "#">Home page</a><p> &gt </p>    <a href = patients.html>Patients</a><p> &gt </p>    <a href= add-new-patient.html>Add new patient</a></nav> 
+<ul class ="breadcrumb">
+<li><a href= "#">Home page</a></li>
+<li><a href = patients.html>Patients</a></li>
+<li>Add a new patient</li>
+</ul>
 </header>
-<aside>
-<ul>
-  <li><a href="#" >Home page</a> </li>
-  <li><a href="#">Hospital</a></li>
-  <li><a href="#">Emergency</a></li>
-  <li><a href="#">Doctors</a></li>
-  <li><a href= patients.html >Patients</a></li>
-  <li><a href="#">Nurses</a></li>
-  <li><a href="#">Staff</a></li>
-  <li><a href="#">Settings</a></li>
-  <li><a href="#">Reports</a></li>
- </ul>
- </aside>
+
 <main>
-<h2>register new patient</h2>
 <form>
 <fieldset>
 <legend>Patient information</legend>
 <div style="float: right">
-<label>Phone number:</label><input type ="text" name="phoneNumber" ><br><br>
-<label>Photo:</label><input type ="file" name="photo"><br><br>
-<label>Address:</label><input type ="text" name="address" value="neighborhood/city"><br><br>
-<label>Insurance company name:</label><input type ="text"><br><br>
+<label>Phone number: </label><input type ="text" name="phoneNumber" ><br><br><br>
+<label>Photo: </label><input type ="file" name="photo"><br><br><br>
+<label>Address: </label><input type ="text" name="address" value="neighborhood/city"><br><br><br>
+<label>Insurance company name: </label><input type ="text"><br><br><br>
+<button>Add</button>
 </div>
 <div>
-<label>Name:</label><input type ="text"><br><br>
-<label>National ID:</label><input type ="text"><br><br>
-<label>Gender:</label><select>
+<label>Name: </label><input type ="text"><br><br><br>
+<label>National ID: </label><input type ="text"><br><br><br>
+<label>Gender: </label><select>
 <option>Female</option>
 <option>Male</option>
 </select>
-<br><br>
-<label>Date of Birth:</label><input type="date"><br><br>
-<label>Marital Status:</label><select>
+<br><br><br>
+<label>Date of Birth: </label><input type="date"><br><br><br>
+<label>Marital Status: </label><select>
 <option>Single</option>
 <option>Married</option>
 <option>Divorced</option>
 <option>Widower</option>
-</select><br><br>
+</select><br><br><br>
 </div>
 
 
 </fieldset>
 </form>
  </main>
+ <aside>
+<ul>
+  <li><a href="#" >Home page</a> </li>
+  <li><a href="#">Hospital</a></li>
+  <li><a href="#">Doctors</a></li>
+  <li><a href= patients.html >Patients</a></li>
+  <li><a href="#">Emergency</a></li>
+  <li><a href="#">Reports</a></li>
+  <li><a href="#">Nurses</a></li>
+  <li><a href="#">Staff</a></li>
+  <li><a href="#">Settings</a></li>
+ </ul>
+ </aside>
  <footer>
 <p>All rights reserved ©2022 Hope Hospital</p>
 </footer>
