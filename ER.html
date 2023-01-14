@@ -2,13 +2,29 @@
 
 <html>
 <head>
+
+<link rel="stylesheet" href="#">
+<style>
+table, th, td {
+  border:1px solid black;
+}
+</style>
+<img src="images/logo.png" width = 150; height = 150;>
+<head>
 <title>Hope Hospital - Emergency</title>
 </head>
-<body>
-<header>
-<img src = "images\logo.png" alt= "hospital logo" width="150" height="120" style="float:left">
+
 <h1>Hope Hospital</h1>
-<nav><a href= "#">Home page</a><p> &gt </p>    <a href = ER.html>Emergency</a></nav> 
+<nav><a href= "#">Home page</a> <p>&gt</p> <a href = ER.html>Emergency</a></nav>
+<body>
+<p>Due Date</p><p id="p1"></p><script>
+	var date = new Date();
+	var current_date = date.getFullYear()+"-"+(date.getMonth()+1)+"-"+ date.getDate();
+	document.getElementById("p1").innerHTML = current_date;
+</script>
+<header>
+
+ 
 </header>
 <aside style="float: left";>
 <ul>
@@ -23,9 +39,56 @@
   <li><a href="#">Reports</a></li>
  </ul>
  </aside>
+<main>
 
 
-
+<table style="width:50%">
+  <tr>
+    <th>Time</th>
+    <th>Sun</th>
+    <th>Mon</th>
+	<th>Tue</th>
+	<th>Wed</th>
+	<th>Thu</th>
+	<th>Fri</th>
+	<th>Sat</th>
+  </tr>
+  <tr>
+    <td>6:00-10:00</td>
+        <th rowspan="3">Sara</th>
+<td>Ahmad</td>
+  <th rowspan="3" colspan="2">Saleh</th>
+    <td colspan="3"> Faisal</td>
+  </tr>
+  <tr>
+    <td>10:00-2:00</td>
+	 <th rowspan="3">Ahmad</th>
+	 <td colspan="3">Saleh</td>
+    
+  </tr>
+   <tr>
+    <td>2:00-6:00</td>
+	<th rowspan="2" colspan="3">Nora</th>
+    
+  </tr>
+   <tr>
+    <td>6:00-10:00</td>
+        <th rowspan="2">Ahmad</th>
+		<th rowspan="3">Sara</th>
+		<th rowspan="3">Lara</th>
+  </tr> <tr>
+    <td>10:00-2:00</td>
+	 <th rowspan="2">Lara</th>
+    <th rowspan="2">Ahmad</th>
+	<th rowspan="2">Mona</th>
+	<th rowspan="2">Bader</th>
+  </tr> <tr>
+    <td>2:00-6:00</td>
+	 <td>Lara</td>
+    
+  </tr>
+</table>
+</main>
  <footer>
 <p>All rights reserved ©2022 Hope Hospital</p>
 </footer>
