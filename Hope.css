@@ -1,0 +1,138 @@
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background: url(images/logo.png) no-repeat fixed bottom;
+    background-size: 35% 55%;
+    background-attachment: fixed;
+    font-family: Courier, monospace;
+    color: #202020;
+    height: 100%;
+    width: 100%;
+}
+
+header {
+    background-color: #ebfeff;
+    width: 100%;
+    height: auto;
+    border-style: outset;
+    border: 1%;
+    padding: 0%;
+    margin: 0%;
+}
+
+    header img {
+        Float: left;
+    }
+
+main img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+header h1 {
+    padding: 80px 0;
+    text-indent: 5%;
+    text-shadow: 2px 2px #ccffff;
+}
+
+a:hover {
+    color: teal;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #ebfeff;
+    Font-size: small;
+    font-weight: bold;
+    text-align: center;
+    line-height: 3em;
+    width: 100%;
+    Height: auto;
+    border-style: outset;
+    border: 1%;
+    padding: 0%;
+    margin: 0%;
+}
+
+nav {
+    background-color: #F8F8F8;
+    font: bold;
+    line-height: 3em;
+}
+
+aside {
+    background-color: #F8F8F8;
+    font: bold;
+    line-height: 3em;
+    float: right;
+    width: 20%;
+    height: auto;
+    border-style: outset;
+    border-color: rgb(225, 235, 225);
+    border: 1%;
+    padding: 1%;
+    margin: 1%;
+}
+
+main {
+    width: 70%;
+    height: auto;
+    border-style: outset;
+    border-color: rgb(225, 235, 225);
+    border: 1%;
+    padding: 1%;
+    margin: 1%;
+}
+
+h2 {
+    color: #008080;
+    font-style: italic;
+}
+
+
+ul {
+    list-style-image: url(logo.png);
+}
+
+dt {
+    font-weight: bold;
+    color: #6accbc;
+}
+
+dl {
+    text-align: center;
+    line-height: 3em;
+}
+
+thead {
+    background-color: teal;
+    color: white;
+    text-align: center;
+}
+
+tbody {
+    text-align: center;
+    background-color: white;
+    font-weight: bold;
+}
+
+tfoot {
+    font-weight: bold;
+    text-align: center;
+    background-color: grey;
+}
+
+tbody > tr > :nth-child(1) {
+    background-color: white;
+}
+
+caption {
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 2em;
+}
