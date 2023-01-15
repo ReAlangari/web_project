@@ -24,14 +24,12 @@ header {
 }
 
     header img {
-        Float: left;
+        float: left;
+		width:150px;
+		height:150px;
     }
 
-main img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
+
 }
 
 header h1 {
@@ -57,27 +55,30 @@ footer {
     border: 1%;
     padding: 0%;
     margin: 0%;
+	clear:left;
 }
 
 nav {
     background-color: #F8F8F8;
     font: bold;
     line-height: 3em;
+	clear: left;
 }
 
 aside {
     background-color: #F8F8F8;
     font: bold;
     line-height: 3em;
-    float: right;
+    float: left;
     width: 20%;
-    height: auto;
+    height: 500px;
     border-style: outset;
     border-color: rgb(225, 235, 225);
     border: 1%;
     padding: 1%;
-    margin: 1%;
+	margin :1%;
 }
+
 
 main {
     width: 70%;
@@ -96,7 +97,7 @@ h2 {
 
 
 ul {
-    list-style-image: url(logo.png);
+    list-style-image: url(.png);
 }
 
 dt {
@@ -149,7 +150,7 @@ caption {
     padding: 0;
 }
 
-.breadcrump li:not(:last-child)::after {
+.breadcrumb li:not(:last-child)::after {
     display: inline-block;
     margin: 0 .25rem;
     content: "→";
