@@ -24,9 +24,9 @@ header {
 }
 
     header img {
-        float: left;
-		width:150px;
-		height:150px;
+    float: left;
+    width:150px;
+    height:150px;
     }
 
 
@@ -55,14 +55,14 @@ footer {
     border: 1%;
     padding: 0%;
     margin: 0%;
-	clear:left;
+    clear:left;
 }
 
 nav {
     background-color: #F8F8F8;
     font: bold;
     line-height: 3em;
-	clear: left;
+    clear: left;
 }
 
 aside {
@@ -76,7 +76,7 @@ aside {
     border-color: rgb(225, 235, 225);
     border: 1%;
     padding: 1%;
-	margin :1%;
+    margin :1%;
 }
 
 
