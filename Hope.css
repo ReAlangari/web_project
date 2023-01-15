@@ -71,6 +71,7 @@ aside {
     width: 20%;
     height: 500px;
     border-style: outset;
+    clear: left;
     border-color: rgb(225, 235, 225);
     border: 1%;
     padding: 1%;
