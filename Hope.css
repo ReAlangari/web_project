@@ -33,7 +33,7 @@ header {
 header h1 {
     padding: 80px 0;
     text-indent: 5%;
-    text-shadow: 2px 2px ##0072bb;
+    text-shadow: 3px 3px ##0072bb;
 }
 
 a:hover {
@@ -59,7 +59,7 @@ footer {
 nav {
     background-color: #F8F8F8;
     font: bold;
-    line-height: 3em;
+    line-height: 1em;
     clear: left;
 }
 
