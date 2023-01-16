@@ -71,13 +71,6 @@ aside ul {
     background-color: #f1f1f1;
 }
 
-aside ul li a {
-    display: block;
-    color: #000;
-    padding: 4px 8px;
-    text-decoration: none;
-}
-
 aside {
     background-color: #F8F8F8;
     font: bold;
