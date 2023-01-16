@@ -4,7 +4,7 @@ html {
 }
 
 body {
-    background: url(images/logo.png) no-repeat fixed bottom;
+    background: url(images/back.jpg) no-repeat fixed bottom;
     background-size: 35% 55%;
     background-attachment: fixed;
     font-family: Courier, monospace;
@@ -87,6 +87,7 @@ main {
     border: 1%;
     padding: 1%;
     float: right;
+    margin: 1%;
 }
 
 h2 {
