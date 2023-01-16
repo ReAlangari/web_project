@@ -33,7 +33,7 @@ header {
 header h1 {
     padding: 80px 0;
     text-indent: 5%;
-    text-shadow: 2px 2px #ccffff;
+    text-shadow: 2px 2px ##0072bb;
 }
 
 a:hover {
