@@ -14,7 +14,7 @@ body {
 header {
     background-color: #ebfeff;
     width: 100%;
-    height: auto;
+    height: 100px;
     border-style: outset;
     border: 1%;
     padding: 0%;
