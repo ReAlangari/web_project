@@ -63,6 +63,12 @@ nav {
     clear: left;
 }
 
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
 aside {
     background-color: #F8F8F8;
     font: bold;
