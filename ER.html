@@ -1,48 +1,76 @@
 <!DOCTYPE html>
 
 <html>
-<head>
 
-<link rel="stylesheet" href="#">
+<head>
+<title>Hope Hospital - Emergency</title>
+<link rel="stylesheet" href="Hope.css">
 <style>
 table, th, td {
   border:1px solid black;
 }
-</style>
-<img src="images/logo.png" width = 150; height = 150;>
-<head>
-<title>Hope Hospital - Emergency</title>
-</head>
+.styled-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+.styled-table thead tr {
+    background-color: #6495ED;
+    color: #ffffff;
+    text-align: left;
+}
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+}
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
 
-<h1>Hope Hospital</h1>
-<nav><a href= "#">Home page</a> <p>&gt</p> <a href = ER.html>Emergency</a></nav>
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+.styled-table tbody tr.active-row {
+    font-weight: bold;
+    color: #009879;
+}
+</style>
+
+</head>
 <body>
+
+<header>
+<img src = "imge/logo.png" alt= "hospital logo">
+<h1>Hope Hospital</h1>
+
+<ul class ="breadcrumb">
+ 
+<li><a href= Home.html>Home page</a></li><li>Emergency</li>
+</ul>
+
+ 
+</header>
+
+
+
+
+
+<main>
 <p>Due Date</p><p id="p1"></p><script>
 	var date = new Date();
 	var current_date = date.getFullYear()+"-"+(date.getMonth()+1)+"-"+ date.getDate();
 	document.getElementById("p1").innerHTML = current_date;
+
 </script>
-<header>
-
- 
-</header>
-<aside style="float: left";>
-<ul>
- <li> <a href="#" >Home page</a> </li>
-  <li><a href="#">Hospital</a></li>
-  <li><a href=ER.html"#">Emergency</a></li>
-  <li><a href="#">Doctors</a></li>
-  <li><a href= patients.html >Patients</a></li>
-  <li><a href="#">Nurses</a></li>
-  <li><a href="#">Staff</a></li>
-  <li><a href="#">Settings</a></li>
-  <li><a href="#">Reports</a></li>
- </ul>
- </aside>
-<main>
-
-
-<table style="width:50%">
+<table class="styled-table">
+    <thead>
   <tr>
     <th>Time</th>
     <th>Sun</th>
@@ -53,6 +81,8 @@ table, th, td {
 	<th>Fri</th>
 	<th>Sat</th>
   </tr>
+    </thead>
+	 <tbody>
   <tr>
     <td>6:00-10:00</td>
         <th rowspan="3">Sara</th>
@@ -85,10 +115,25 @@ table, th, td {
   </tr> <tr>
     <td>2:00-6:00</td>
 	 <td>Lara</td>
-    
+     </tbody>
   </tr>
 </table>
+
 </main>
+ <aside>
+<ul>
+<li><a href= Home.html >Homepage</a> </li>
+  <li><a href="#">Hospital</a></li>
+  <li><a href= doctors.html>Doctors</a></li>
+  <li><a href= patients.html >Patients</a></li>
+  <li><a href= ER.html>Emergency</a></li>
+  <li><a href="#">Nurses</a></li>
+  <li><a href="#">Staff</a></li>
+  <li><a href= settings.html >Settings</a></li>
+   <li><a href= reports.html >Reports</a></li>
+
+ </ul>
+ </aside>
  <footer>
 <p>All rights reserved ©2022 Hope Hospital</p>
 </footer>
