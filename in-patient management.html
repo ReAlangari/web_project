@@ -5,39 +5,27 @@
 <meta charset="utf-8">
 <link rel ="stylesheet" href=Hope.css>
 <style>
-*{
-box-sizing: border-box;}
+
 
 .in-patient{
 margin:auto;
 max-width:800px;
 overflow:auto;
+box-sizing: border-box;
 }
 .In-patient{
 margin:5px;
 border:1px solid #ccc;
 float:left;
 width:250px;
+box-sizing: border-box;
 }
 .id{
 border:1px solid #ccc;
 font-size:1.5em;
 font-weight:bold;}
+.In-patient{position: relative;}
 
-main {  max-width:995px;
-    overflow:auto;
-    border-style: outset;
-    border-color: rgb(225, 235, 225);
-    border: 1%;
-    padding: 1%;
-    margin: 1%;
-	float:right;
-	text-align: center;
-}
-.In-patient {
-  position: relative;
-
-}
 
 .image {
   display: block;
@@ -102,26 +90,16 @@ form ul li  {
 <header> 
 <img src ="images/logo2.png" alt="logo" >
 <h1>Hope Hospital</h1> 
+<nav>
 <ul class ="breadcrumb">
 <li><a href= "Home.html">Home page</a></li>
 <li><a href="#" >Patients</a></li>
 <li>in-patient management</li>
 </ul>
+</nav>
 </header>
-<aside>
-<ul>
- <li> <a href="Home.html">Homepage</a> </li>
-  <li><a href="#">Hospital</a></li>
-  <li><a href="#">Emergency</a></li>
-  <li><a href="#">Doctors</a></li>
-  <li><a href="#">Patients</a></li>
-  <li><a href="#">Nurses</a></li>
-  <li><a href="#">Staff</a></li>
-  <li><a href="#">Settings</a></li>
-  <li><a href="#">Reports</a></li>
- </ul>
- </aside>
-<main style="float:left;">
+
+<main style="text-align: center;">
 <label for="Ward" class="Ward"  >Ward:</label>
 <select id="Ward" name="ward" >
 <option value="ER" >ER</option>
@@ -130,7 +108,7 @@ form ul li  {
 </select><br>
 <div class="in-patient">
 <div class="In-patient">
-<img src ="images\occupied-bed.png" alt="occ bed" width="100" height="100" class="image">
+<img src ="images\occupied-bed.png" alt="occ bed" width="100" height="104.75" class="image">
 <div class="overlay">
 <div class="text">Name: Sara Khalid<br>Admission:2022/11/20<br>Discharge Date:2023/1/1</div>
   </div>
@@ -169,7 +147,19 @@ form ul li  {
 
 
 </main>
-
+<aside>
+<ul>
+ <li> <a href="Home.html">Homepage</a> </li>
+  <li><a href="#">Hospital</a></li>
+  <li><a href="#">Emergency</a></li>
+  <li><a href="#">Doctors</a></li>
+  <li><a href="#">Patients</a></li>
+  <li><a href="#">Nurses</a></li>
+  <li><a href="#">Staff</a></li>
+  <li><a href="#">Settings</a></li>
+  <li><a href="#">Reports</a></li>
+ </ul>
+ </aside>
 
   <footer> <p> All rights reserved ©2022 Hope Hospital </p> </footer>
  </body>
