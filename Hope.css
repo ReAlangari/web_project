@@ -81,12 +81,12 @@ aside ul {
         border-bottom: none;
     }
 
-aside ul li a.active {
+aside ul li.active {
     background-color: #0494AA;
     color: white;
 }
 
-aside a:hover:not(.active) {
+aside li:hover:not(.active) {
     background-color: #555;
     color: white;
 }
