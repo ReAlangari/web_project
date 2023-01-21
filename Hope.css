@@ -77,10 +77,6 @@ aside ul {
      border-bottom: 1px solid #555;
 }
 
-aside ul li {
-    
-}
-
   aside ul li:last-child {
         border-bottom: none;
     }
