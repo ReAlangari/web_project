@@ -1,19 +1,39 @@
 <!DOCTYPE html>
 <html lang = "en">
 <head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <title>Hope Hospital - Doctors</title>
-<link rel="stylesheet" href= Hope.css >
+<link rel="stylesheet" href=Hope.css >
 <style>
-img{
-width:75px;
-height:75px;
+
+
+.Doc{
 float:left;
-}
-label{font-weight:bold; font-family: Arial }
-div{
 border-style: groove;
-width: 200px;
+width:80px ;
+height:80px;
+ 
 }
+
+label{font-weight:bold; font-family: Arial }
+
+.doctors{
+width: 400px;
+height:auto;
+background-color: #f4f4f4;
+font-size: 15px;
+box-sizing: border-box;
+}
+.checked {
+  color: orange;
+}
+pre{
+font-weight: bold;}
+
+.Gray{
+color:gray;
+}
+
 </style>
 </head>
 <body>
@@ -21,7 +41,7 @@ width: 200px;
 <img src = "images/logo2.png" alt= "hospital logo">
 <h1>Hope Hospital</h1>
 <nav><ul class ="breadcrumb">
-<li><a href= Home.html>Home page</a></li>
+<li><a href= "Home.html">Home page</a></li>
 <li>Doctors</li>
 </ul>
 </nav> 
@@ -29,31 +49,59 @@ width: 200px;
 
 <main>
 <h2>Doctors</h2>
-<p><label>Sort: </label>
+<p><label style="color:gray;">Sort: </label>
 <select style="width:150px;">
 <option>By department</option>
 <option>alphabetically</option>
 </select></p>
-<div>
-<img src="images/doctor.png" alt="doctor photo" >
-<pre>Doctor name:
-Department:
-Phone number:
-Email: </pre>
-<div>
- </main>
- <aside>
-<ul>
-<li><a href= Home.html>Homepage</a> </li>
-  <li><a href= Hospital.html >Hospital</a></li>
-    <li><a href= ER.html >Emergency</a></li>
 
-  <li><a href="#">Doctors</a></li>
-  <li><a href= patients.html >Patients</a></li>
+<div class="doctors">
+<img src="images/doctor.png" alt="doctor photo" class="Doc" >
+<pre>
+
+<span class="Gray">Doctor name:</span> Ahmad Khalid
+<span class="Gray">Department:</span> General Surgery
+<span class="Gray">Phone number:</span> 0551231231
+<span class="Gray">Email:</span> ahmad@gmail.com
+</pre>
+
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+</div>
+<div> 
+<br>  
+</div>
+<div class="doctors">
+<img src="images/doctor.png" alt="doctor photo" class="Doc">
+<pre>
+
+<span class="Gray">Doctor name:</span> Noura Fahad
+<span class="Gray">Department:</span> Cardiology
+<span class="Gray">Phone number:</span> 0510101011
+<span class="Gray">Email:</span> Noura@gmail.com
+</pre>
+
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+</div>
+
+ </main>
+<aside>
+<ul>
+  <li><a href= "Hospital.html" >Hospital</a></li>
+  <li class="active"><a href= "doctors.html" >Doctors</a></li>
+  <li><a href="patients.html" >Patients</a></li>
+  <li><a href="ER.html" >ER</a></li>
+  <li><a href="reports.html">Reports</a></li>
   <li><a href="#">Nurses</a></li>
   <li><a href="#">Staff</a></li>
-  <li><a href= settings.html >Settings</a></li>
-   <li><a href= reports.html >Reports</a></li>
+  <li><a href= "settings.html">Settings</a></li>
 
  </ul>
  </aside>
