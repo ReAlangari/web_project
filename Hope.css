@@ -64,9 +64,7 @@ aside ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    width: 25%;
     background-color: #f1f1f1;
-    position: fixed;
     height: 100%;
     overflow: auto;
     border: 1px solid #555;
@@ -96,13 +94,11 @@ aside li:hover:not(.active) {
 }
 
 aside {
-    background-color: #F8F8F8;
     font: bold;
     line-height: 3em;
     float: left;
     width: 20%;
     height: 500px;
-    border-style: outset;
     clear: left;
     border-color: rgb(225, 235, 225);
     padding: 1%;
