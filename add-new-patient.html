@@ -17,13 +17,18 @@ font-size:20px;
 font-weight:bold;
 position:absolute;
 right:70px
+
 }
 
-input
+
+input,button
 {
 border:1px solid #555;
 padding:6px 10px;
 
+}
+main{
+height:500px;
 }
 form fieldset{
 height:400px;
@@ -55,30 +60,26 @@ font-family: Arial
 </header>
 
 <main>
-<form action="#">
+<form action="add-new-patient.html">
 <fieldset>
 <legend>Patient information</legend>
-<div style="float: right">
-<label>Phone number: </label><input type ="text" name="phoneNumber" ><br><br><br>
-<label>Photo: </label><input type ="file" name="photo"><br><br><br>
-<label>Address: </label><input type ="text" name="address" value="neighborhood/city" style="color: lightGray;"><br><br><br>
-<label>Insurance company name: </label><input type ="text" name="Insurance company name"><br><br><br>
-</div>
+
 <div>
-<label>Name: </label><input type ="text" name="name"><br><br><br>
+<label>Name: </label><input type ="text"  name="name"><br><br><br>
 <label>National ID: </label><input type ="text" name="ID"><br><br><br>
+<label>Date of Birth: </label><input type="date" name="BOD" style="color: lightGray;"><br><br><br>
+<label>Marital Status: </label><input type ="text"  name="martialStatus"><br><br><br>
+</div>
+<div style="position:relative; left:500px; bottom:260px;">
 <label>Gender: </label><select name="gender">
 <option>Female</option>
 <option>Male</option>
 </select>
 <br><br><br>
-<label>Date of Birth: </label><input type="date" name="BOD" style="color: lightGray;"><br><br><br>
-<label>Marital Status: </label><select name="martialStatus">
-<option value="single">Single</option>
-<option value="married">Married</option>
-<option value="divorced">Divorced</option>
-<option value="widower">Widower</option>
-</select><br><br><br>
+<label>Phone number: </label><input type ="text" name="phoneNumber" ><br><br><br>
+<label>Photo: </label><input type ="file"  id="getfile" name="photo"><br><br><br>
+<label>Address: </label><input type ="text" name="address" onfocus="this.value=''" value="neighborhood/city" style="color: lightGray;"><br><br><br>
+<label>Insurance company name: </label><input type ="text" name="Insurance company name"><br><br><br>
 </div>
 
 
@@ -89,15 +90,14 @@ font-family: Arial
  </main>
  <aside>
 <ul>
-<li><a href= Home.html >Homepage</a> </li>
   <li><a href= Hospital.html >Hospital</a></li>
-    <li><a href= ER.html >Emergency</a></li>
   <li><a href= doctors.html>Doctors</a></li>
   <li><a href= patients.html >Patients</a></li>
+      <li><a href= ER.html >ER</a></li>
+   <li><a href= reports.html >Reports</a></li>
   <li><a href="#">Nurses</a></li>
   <li><a href="#">Staff</a></li>
   <li><a href= settings.html >Settings</a></li>
-   <li><a href= reports.html >Reports</a></li>
 
  </ul>
  </aside>
