@@ -1,10 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html lang = "en">
 <head>
 <title>Hope Hospital - Doctors</title>
 <link rel="stylesheet" href= Hope.css >
 <style>
+img{
+width:75px;
+height:75px;
+float:left;
+}
 label{font-weight:bold; font-family: Arial }
+div{
+border-style: groove;
+width: 200px;
+}
 </style>
 </head>
 <body>
@@ -20,19 +29,27 @@ label{font-weight:bold; font-family: Arial }
 
 <main>
 <h2>Doctors</h2>
-<label>Sort: </label>
-<select>
+<p><label>Sort: </label>
+<select style="width:150px;">
 <option>By department</option>
 <option>alphabetically</option>
-</select>
+</select></p>
+<div>
+<img src="images/doctor.png" alt="doctor photo" >
+<pre>Doctor name:
+Department:
+Phone number:
+Email: </pre>
+<div>
  </main>
  <aside>
 <ul>
 <li><a href= Home.html>Homepage</a> </li>
-  <li><a href="#">Hospital</a></li>
-  <li><a href= "#">Doctors</a></li>
+  <li><a href= Hospital.html >Hospital</a></li>
+    <li><a href= ER.html >Emergency</a></li>
+
+  <li><a href="#">Doctors</a></li>
   <li><a href= patients.html >Patients</a></li>
-  <li><a href= ER.html >Emergency</a></li>
   <li><a href="#">Nurses</a></li>
   <li><a href="#">Staff</a></li>
   <li><a href= settings.html >Settings</a></li>
