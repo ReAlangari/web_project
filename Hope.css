@@ -72,6 +72,10 @@ aside ul {
     border: 1px solid #555;
 }
 
+aside ul li a {
+    text-decoration: none;
+}
+
   aside ul li {
      text-align: center;
      border-bottom: 1px solid #555;
