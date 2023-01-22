@@ -42,11 +42,13 @@ a:hover {
 footer {
     background-color: #ebfeff;
     Font-size: small;
+    position: fixed;
+    bottom: 0;
     font-weight: bold;
     text-align: center;
     line-height: 3em;
     width: 100%;
-    Height: auto;
+    Height: 60px;
     border-style: outset;
     padding: 0%;
     margin: 0%;
@@ -99,7 +101,7 @@ aside {
     line-height: 3em;
     float: left;
     width: 20%;
-    height: 500px;
+    height: auto;
     clear: left;
     border-color: rgb(225, 235, 225);
     padding: 1%;
