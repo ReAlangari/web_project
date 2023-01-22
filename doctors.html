@@ -17,23 +17,32 @@ height:90px;
 
 label{font-weight:bold; font-family: Arial }
 
+.float-container {
+    border: 3px solid #fff;
+    padding: 20px;
+}
+
 .doctorInfo{
-width: 400px;
+width: 450px;
 height:auto;
-background-color: #f4f4f4;
+background-color: #ebfeff;
 font-size: 15px;
 box-sizing: border-box;
 border-style: outset;
-}
+float: left;
+padding: 20px;
+ margin:7px; }
+
 .checked {
-  color: orange;
-}
+  color: orange;}
+
 pre{
 font-weight: bold;}
 
 .Gray{
-color:gray;
-}
+color:gray;}
+
+
 
 </style>
 </head>
@@ -55,7 +64,7 @@ color:gray;
 <option>By department</option>
 <option>alphabetically</option>
 </select></p>
-
+<div class="float-container">
 <div class="doctorInfo">
 <img src="images/doctor.png" alt="doctor photo" class="image" >
 <pre>
@@ -71,9 +80,7 @@ color:gray;
 <span class="fa fa-star checked"></span>
 <span class="fa fa-star"></span>
 </div>
-<div> 
-<br>  
-</div>
+
 <div class="doctorInfo">
 <img src="images/doctor.png" alt="doctor photo" class="image">
 <pre>
@@ -89,7 +96,39 @@ color:gray;
 <span class="fa fa-star checked"></span>
 <span class="fa fa-star"></span>
 </div>
+<div class="doctorInfo">
+<img src="images/doctor.png" alt="doctor photo" class="image" >
+<pre>
+<span class="Gray">Doctor name:</span> Sara Abduallah
+<span class="Gray">Department:</span> Oncology
+<span class="Gray">Phone number:</span> 0552356780
+<span class="Gray">Email:</span> Sara@gmail.com
+</pre>
 
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star "></span>
+<span class="fa fa-star"></span>
+</div>
+
+<div class="doctorInfo">
+<img src="images/doctor.png" alt="doctor photo" class="image">
+<pre>
+<span class="Gray">Doctor name:</span> Fahad Saad
+<span class="Gray">Department:</span> Dermatology
+<span class="Gray">Phone number:</span> 0509804519
+<span class="Gray">Email:</span> Fahad@gmail.com
+</pre>
+
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star "></span>
+<span class="fa fa-star"></span>
+</div>
+
+</div>
  </main>
 <aside>
 <ul>
