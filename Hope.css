@@ -43,6 +43,7 @@ footer {
     background-color: #ebfeff;
     Font-size: small;
     bottom: 0;
+    position: fixed;
     font-weight: bold;
     text-align: center;
     line-height: 3em;
