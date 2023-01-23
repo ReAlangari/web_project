@@ -3,7 +3,7 @@
 <html>
 
 <head>
-<title>Hope Hospital - Emergency</title>
+<title>Hope Hospital - Er</title>
 <link rel="stylesheet" href="Hope.css">
 <style>
 table, th, td {
@@ -18,7 +18,7 @@ table, th, td {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 }
 .styled-table thead tr {
-    background-color: #6495ED;
+    background-color: #86C5D8;
     color: #ffffff;
     text-align: left;
 }
@@ -34,28 +34,21 @@ table, th, td {
     background-color: #f3f3f3;
 }
 
-.styled-table tbody tr:last-of-type {
-    border-bottom: 2px solid #009879;
-}
-.styled-table tbody tr.active-row {
-    font-weight: bold;
-    color: #009879;
-}
+
+
 </style>
 
 </head>
 <body>
 
 <header>
-<img src = "imge/logo.png" alt= "hospital logo">
+<img src = "images/logo2.png" alt= "hospital logo">
 <h1>Hope Hospital</h1>
-
-<ul class ="breadcrumb">
- 
-<li><a href= Home.html>Home page</a></li><li>Emergency</li>
+<nav><ul class ="breadcrumb">
+<li><a href= Home.html>Home page</a></li>
+<li>Er</li>
 </ul>
-
- 
+</nav> 
 </header>
 
 
@@ -63,12 +56,8 @@ table, th, td {
 
 
 <main>
-<p>Due Date</p><p id="p1"></p><script>
-	var date = new Date();
-	var current_date = date.getFullYear()+"-"+(date.getMonth()+1)+"-"+ date.getDate();
-	document.getElementById("p1").innerHTML = current_date;
-
-</script>
+<h2>ER</h2>
+<h4 style="font:blod;font-size:17px;">Date: 1-1-2023</h4>
 <table class="styled-table">
     <thead>
   <tr>
@@ -112,27 +101,29 @@ table, th, td {
     <th rowspan="2">Ahmad</th>
 	<th rowspan="2">Mona</th>
 	<th rowspan="2">Bader</th>
-  </tr> <tr>
+  </tr>
+  <tr>
     <td>2:00-6:00</td>
 	 <td>Lara</td>
-     </tbody>
+     
   </tr>
+  </tbody>
 </table>
 
 </main>
- <aside>
+  <aside>
 <ul>
-<li><a href= Home.html >Homepage</a> </li>
-  <li><a href="#">Hospital</a></li>
-  <li><a href= doctors.html>Doctors</a></li>
+  <li><a href= Hospital.html >Hospital</a></li>
+  <li><a href= doctors.html >Doctors</a></li>
   <li><a href= patients.html >Patients</a></li>
-  <li><a href= ER.html>Emergency</a></li>
+      <li class="active"><a href= ER.html >ER</a></li>
+      <li><a href= reports.html >Reports</a></li>
   <li><a href="#">Nurses</a></li>
   <li><a href="#">Staff</a></li>
-  <li><a href= settings.html >Settings</a></li>
-   <li><a href= reports.html >Reports</a></li>
+  <li >Settings</li>
 
  </ul>
+ 
  </aside>
  <footer>
 <p>All rights reserved ©2022 Hope Hospital</p>
