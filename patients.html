@@ -5,6 +5,7 @@
 <link rel="stylesheet" href= Hope.css >
 <style>
 button {
+
 height:auto;
 width:auto;
 background-color: gray; 
@@ -12,13 +13,23 @@ border-style: outset;
 border-color:rgb(225, 235, 225);
 color:white; 
 position:relative;
-bottom:-180px;
+top:120px;
 padding:6px 9px ;
 margin:2%;
 text-align:center; 
-display:inline-block;
 font-size:35px;
 font-weight:bold;
+}
+button:hover{
+background-color: #0494AA;
+
+}
+form{
+display:inline;
+}
+svg{
+position:relative;
+top:20px;
 }
 main{text-align:center; height:500px;}
 </style>
@@ -35,20 +46,19 @@ main{text-align:center; height:500px;}
 </header>
 
 <main>
-<button onclick = "window.location.href ='add-new-patient.html';" ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" width="50" height="50"><path d="M352 128c0 70.7-57.3 128-128 128s-128-57.3-128-128S153.3 0 224 0s128 57.3 128 128zM0 482.3C0 383.8 79.8 304 178.3 304h91.4C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7H29.7C13.3 512 0 498.7 0 482.3zM504 312V248H440c-13.3 0-24-10.7-24-24s10.7-24 24-24h64V136c0-13.3 10.7-24 24-24s24 10.7 24 24v64h64c13.3 0 24 10.7 24 24s-10.7 24-24 24H552v64c0 13.3-10.7 24-24 24s-24-10.7-24-24z"/></svg>Add a new patient</button>
-<button onclick = "window.location.href='in-patient management.html';" ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="50" height="50"><path d="M48 0C21.5 0 0 21.5 0 48V256H144c8.8 0 16 7.2 16 16s-7.2 16-16 16H0v64H144c8.8 0 16 7.2 16 16s-7.2 16-16 16H0v80c0 26.5 21.5 48 48 48H265.9c-6.3-10.2-9.9-22.2-9.9-35.1c0-46.9 25.8-87.8 64-109.2V271.8 48c0-26.5-21.5-48-48-48H48zM152 64h16c8.8 0 16 7.2 16 16v24h24c8.8 0 16 7.2 16 16v16c0 8.8-7.2 16-16 16H184v24c0 8.8-7.2 16-16 16H152c-8.8 0-16-7.2-16-16V152H112c-8.8 0-16-7.2-16-16V120c0-8.8 7.2-16 16-16h24V80c0-8.8 7.2-16 16-16zM512 272c0-44.2-35.8-80-80-80s-80 35.8-80 80s35.8 80 80 80s80-35.8 80-80zM288 477.1c0 19.3 15.6 34.9 34.9 34.9H541.1c19.3 0 34.9-15.6 34.9-34.9c0-51.4-41.7-93.1-93.1-93.1H381.1c-51.4 0-93.1 41.7-93.1 93.1z"/></svg>In-patient management</button>
-
+<form action ="add-new-patient.html"><button type="submit"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" width="60" height="60"><path d="M352 128c0 70.7-57.3 128-128 128s-128-57.3-128-128S153.3 0 224 0s128 57.3 128 128zM0 482.3C0 383.8 79.8 304 178.3 304h91.4C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7H29.7C13.3 512 0 498.7 0 482.3zM504 312V248H440c-13.3 0-24-10.7-24-24s10.7-24 24-24h64V136c0-13.3 10.7-24 24-24s24 10.7 24 24v64h64c13.3 0 24 10.7 24 24s-10.7 24-24 24H552v64c0 13.3-10.7 24-24 24s-24-10.7-24-24z"/></svg><br><br>Add a new patient<br><br></button></form>
+<form action="in-patient-management.html"><button type="submit"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="60" height="60"><path d="M48 0C21.5 0 0 21.5 0 48V256H144c8.8 0 16 7.2 16 16s-7.2 16-16 16H0v64H144c8.8 0 16 7.2 16 16s-7.2 16-16 16H0v80c0 26.5 21.5 48 48 48H265.9c-6.3-10.2-9.9-22.2-9.9-35.1c0-46.9 25.8-87.8 64-109.2V271.8 48c0-26.5-21.5-48-48-48H48zM152 64h16c8.8 0 16 7.2 16 16v24h24c8.8 0 16 7.2 16 16v16c0 8.8-7.2 16-16 16H184v24c0 8.8-7.2 16-16 16H152c-8.8 0-16-7.2-16-16V152H112c-8.8 0-16-7.2-16-16V120c0-8.8 7.2-16 16-16h24V80c0-8.8 7.2-16 16-16zM512 272c0-44.2-35.8-80-80-80s-80 35.8-80 80s35.8 80 80 80s80-35.8 80-80zM288 477.1c0 19.3 15.6 34.9 34.9 34.9H541.1c19.3 0 34.9-15.6 34.9-34.9c0-51.4-41.7-93.1-93.1-93.1H381.1c-51.4 0-93.1 41.7-93.1 93.1z"/></svg><br><br>In-patient management<br><br></button></form>
  </main>
  <aside>
 <ul>
-  <li><a href= Hospital.html >Hospital</a></li>
-  <li><a href= doctors.html>Doctors</a></li>
+  <li><a href= "Hospital.html" >Hospital</a></li>
+  <li><a href= "doctors.html">Doctors</a></li>
   <li class=" active">Patients</li>
-   <li><a href= ER.html >ER</a></li>
-  <li><a href= reports.html >Reports</a></li>
-  <li><a href="#">Nurses</a></li>
-  <li><a href="#">Staff</a></li>
-  <li><a href= settings.html >Settings</a></li>
+   <li><a href= "ER.html" >ER</a></li>
+  <li><a href= "reports.html" >Reports</a></li>
+  <li><a href="nurses.html">Nurses</a></li>
+  <li><a href="staff.html">Staff</a></li>
+  <li><a href= "settings.html" >Settings</a></li>
 
  </ul>
  </aside>
