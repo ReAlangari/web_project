@@ -8,19 +8,20 @@
 
 
 .Home{
-margin-left:250px;
-max-width:1200px;
+margin-left:300px;
+margin-right:300px;
 overflow:auto;
+display: flex;
+flex-wrap:wrap;
+ 
 }
 .home{
 margin:5px;
-border:1px solid #ccc;
-float:left;
-width:500px;
-display: flex;
-flex-direction:row;
- box-sizing: border-box;
- align-items:flex-end;
+border-style: outset;
+border-size:10px;
+width:400px;
+
+
 
 }
 
@@ -35,13 +36,17 @@ background-color:#f8f8f8;
     border: 1px;
     padding: 1%;
     margin :1%;
- text-align: center;
+    text-align: center;
    text-decoration: none;
    list-style-type: none;
    color: #000;
 }
 
-
+a:hover {
+    background-color: teal;
+	color:white;
+    font-weight: bold;
+}
 
 
 </style>
@@ -63,7 +68,7 @@ background-color:#f8f8f8;
 <a href="doctors.html"> Doctors </a> 
 </div>
 <div class="home">
-<img src ="images/patients.jpg" alt="patients" width="200" height="200" >
+<img src ="images/patient.png" alt="patients" width="200" height="200" >
 <a href="patients.html"> Patients </a>
 </div>
 <div class="home">
