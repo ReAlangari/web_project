@@ -13,6 +13,8 @@ float:left;
 border-style: groove;
 width:90px ;
 height:90px;
+  margin-left: auto;
+  margin-right: auto;
  
 }
 
@@ -31,17 +33,23 @@ font-size: 15px;
 box-sizing: border-box;
 border-style: outset;
 float: left;
-padding: 20px;
- margin:7px; }
+padding:20px;
+ margin:7px; 
+ display: flex;
+ flex-direction: row;
+ justify-content:space-around;}
 
 .checked {
   color: orange;}
 
 pre{
-font-weight: bold;}
+font-weight: bold;
+text-align:center;}
 
 .Gray{
 color:gray;}
+
+
 
 
 
@@ -83,19 +91,21 @@ color:gray;}
 </div>
 
 <div class="doctorInfo">
+
 <img src="images/D1F.JPG" alt="doctor photo" class="image">
+
 <pre>
 <span class="Gray">Doctor name:</span> Noura Fahad
 <span class="Gray">Department:</span> Cardiology
 <span class="Gray">Phone number:</span> 0510101011
 <span class="Gray">Email:</span> Noura@gmail.com
 </pre>
-
 <span class="fa fa-star checked"></span>
 <span class="fa fa-star checked"></span>
 <span class="fa fa-star checked"></span>
 <span class="fa fa-star checked"></span>
 <span class="fa fa-star"></span>
+
 </div>
 <div class="doctorInfo">
 <img src="images/D2F.png" alt="doctor photo" class="image" >
@@ -131,14 +141,15 @@ color:gray;}
 
 </div>
  </main>
+<aside>
 <ul>
   <li><a href= "Hospital.html" >Hospital</a></li>
   <li class="active">Doctors</li>
   <li><a href="patients.html" >Patients</a></li>
   <li><a href="ER.html" >ER</a></li>
   <li><a href="reports.html">Reports</a></li>
-  <li><a href= "nurses.html">Nurses</a></li>
-  <li><a href= "staff.html" >Staff</a></li>
+  <li><a href="#">Nurses</a></li>
+  <li><a href="#">Staff</a></li>
   <li><a href= "settings.html">Settings</a></li>
 
  </ul>
