@@ -89,11 +89,15 @@ aside ul li a {
 aside ul li.active {
     background-color: #0494AA;
     color: white;
+font-size:20px;
+font-weight:bold;
+ font-style: oblique;
 }
 
 aside li:hover:not(.active) {
     background-color: #555;
     color: white;
+	
 }
 
 aside {
