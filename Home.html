@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <title>Hope Hospital- Home</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Hope.css">
+    <style>
+
+
+        .Home {
+            margin-left: 150px;
+            margin-right: 150px;
+            overflow: auto;
+            display: flex;
+            flex-wrap: wrap;
+
+        }
+
+        .home {
+            margin: 5px;
+            border-style: outset;
+            border-width: 5px;
+            width: 400px;
+        }
+
+        a {
+            font-size: 1.5em;
+            background-color: #f8f8f8;
+            font: bold;
+            line-height: 3em;
+            width: 25%;
+            height: 20%;
+            border-style: outset;
+            border-color: rgb(225, 235, 225);
+            border: 1px;
+            padding: 1%;
+            margin: 1%;
+            text-align: center;
+            text-decoration: none;
+            list-style-type: none;
+            color: #000;
+        }
+
+            a:hover {
+                background-color: teal;
+                color: white;
+                font-weight: bold;
+            }
+
+        @media screen and (max-width: 896px) {
+            .Home {
+                margin-left: 115px;
+                margin-right: 80px;
+                overflow: auto;
+                display: flex;
+                flex-wrap: wrap;
+                grid-auto-flow: column;
+                position: center;
+            }
+        }
+        @media screen and (max-width: 896px) {
+            .home {
+                margin: 1px;
+                border-style: outset;
+                border-width: 1px;
+                width: 120px;
+                position: center;
+                grid-auto-flow: column;
+            }
+
+            a {
+                font-size: 0.7em;
+                background-color: #f8f8f8;
+                font: bold;
+                line-height: 1em;
+                width: 35%;
+                height: 30%;
+                border-style: outset;
+                border-color: rgb(225, 235, 225);
+                border: 0.5px;
+                padding: 1%;
+                margin: 1%;
+                text-align: center;
+                text-decoration: none;
+                list-style-type: none;
+                color: #000;
+                grid-auto-flow: column;
+                position: center;
+            }
+
+            img {
+                width: 110px;
+                height: 110px;
+                grid-auto-flow: column;
+            }
+
+            header {
+                width: 100%;
+                height: 50px;
+                position: center;
+                grid-auto-flow: column;
+            }
+
+                header img {
+                    float: left;
+                    width: 50px;
+                    height: 50px;
+                    grid-auto-flow: column;
+                }
+
+                header h1 {
+                    font-size: 1em;
+                    grid-auto-flow: column;
+                }
+
+            footer {
+                width: 100%;
+                Height: 50px;
+                position: center;
+                grid-auto-flow: column;
+            }
+
+                footer p {
+                    font-size: 0.2em;
+                    grid-auto-flow: column;
+                }
+
+            body {
+                background: url(images/back.jpg) no-repeat fixed center;
+                background-size: 20% 15%;
+                background-attachment: fixed;
+                font-family: Courier, monospace;
+                color: #202020;
+                grid-auto-flow: column;
+            }
+        }
+
+
+    </style>
+</head>
+
+<body>
+<header> 
+<img src ="images/logo2.png" alt="Hospital logo"  >
+<h1>Hope Hospital</h1> 
+</header>
+
+<div class="Home">
+<div class="home">
+<img src ="images/Hospital.jpg" alt="Hospital icon" width="200" height="200" >
+<a href="Hospital.html">  Hospital  </a> 
+</div>
+<div class="home">
+<img src ="images/doctor.png" alt="Doctor icon" width="200" height="200" >
+<a href="doctors.html"> Doctors </a> 
+</div>
+<div class="home">
+<img src ="images/patient.png" alt="patient icon" width="200" height="200" >
+<a href="patients.html"> Patients </a>
+</div>
+<div class="home">
+<img src ="images/Emargency.png" alt="Emergency icon" width="200" height="200" >
+<a href="ER.html"> ER </a>
+</div>
+<div class="home">
+<img src ="images/nurse.png" alt="nurse icon" width="200" height="200" >
+<a href="nurses.html"> Nurses </a>
+</div>
+<div class="home">
+<img src ="images/staff.png" alt="staff icon" width="200" height="200" >
+<a href="staff.html"> Staff</a>
+</div>
+<div class="home">
+<img src ="images/setting.png" alt="setting icon" width="200" height="200" >
+<a href="settings.html"> Settings </a>
+</div>
+<div class="home">
+<img src ="images/report.png" alt="report icon" width="200" height="200" >
+<a href="reports.html"> Reports</a>
+</div>
+
+</div>
+
+<footer> <p>All rights reserved ©2022 Hope Hospital</p> </footer>
+</body>
+</html>
