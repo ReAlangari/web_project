@@ -9,40 +9,54 @@
     var h = document.forms["Form"]["photo"].value;
 	var i=  document.forms["Form"]["gender"].value;
  count=0;
+ text="Please Fill ";
+ count1=0;
+ text1="";
+
     if (a == null || a == ""){
-	alert("Please Fill Name field");
+	text+="Name, ";
 	count++;}
 	if (d == null || d == ""){
-	alert("Please Fill National ID field");
+	text+="National ID, ";
 	count++;}
 	if (e == null || e == ""){
-	alert("Please Fill Phone Number field");
+	text+="Phone Number, ";
 	count++;}
 	if (b == null || b == ""){
-	alert("Please Fill Date of Birth field");
+	text+="Date of Birth, ";
 	count++;}
 	if (h == null || h == ""){
-    alert("Please Fill Photo field");
+   text+="Photo, ";
 	count++;}
 	if (c == null || c == ""){
-	alert("Please Fill Martial Status field");
+	text+="Martial Status, ";
 	count++;}
 	 if (f == null || f == ""){
-	alert("Please Fill Address field");
+	text+="Address, ";
 	count++;}
 	 if (g == null || g == ""){
-	alert("Please Fill Insurance company name field");
+	text+="Insurance company name, ";
 	count++;}
 
 	if (a.startsWith("0") || a.startsWith("1")|| a.startsWith("2")|| a.startsWith("3")|| a.startsWith("9")|| a.startsWith("4")|| a.startsWith("5")|| a.startsWith("6")|| a.startsWith("7")|| a.startsWith("8"))
-	{alert("Name field cannot start with numbers");
-count++;}
+	{text1+="\n*Name field cannot start with numbers*";
+count1++;}
     
 	if ((e.length>10 || e.length<10) && !(e==null|| e=="")){
-	alert("Phone Number field cannot be less or more than 10 digits");
-	count++;}
+	text1+="\n*Phone Number field cannot be less or more than 10 digits*";
+	count1++;}
+	
+		if ((d.length>10 || d.length<10) && !(d==null|| d=="")){
+	text1+="\n*National ID Field cannot be less or more than 10 digits*";
+	count1++;}
+	
   
-  if(count>0) ;
+  if(count>0 || count1>0) {
+  if(count>0)
+  alert(text+"Thank you");
+  if(count1>0)
+	  alert(text1);
+  }
 	  
   else{
 	document.getElementById('header').innerHTML="*Patient Information*";
@@ -51,10 +65,9 @@ count++;}
 	document.getElementById('NID').innerHTML="National ID:"+d;
 	document.getElementById('Gender').innerHTML="Gender:"+i;
 	document.getElementById('dob').innerHTML="Date of Birth:"+b;
-	document.getElementById('photo1').innerHTML="Photo:"+h;
 	document.getElementById('MS1').innerHTML="Martial Status:"+c;
 	document.getElementById('address1').innerHTML="Address:"+f;
-	document.getElementById('Icn').innerHTML="Insurance company name:"+g;
+	document.getElementById('Icn').innerHTML="Insurance company name:"+g; 
   }
   document.getElementById('header').style.color='black';
   }
