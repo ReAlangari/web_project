@@ -39,15 +39,15 @@
 	count++;}
 
 	if (a.startsWith("0") || a.startsWith("1")|| a.startsWith("2")|| a.startsWith("3")|| a.startsWith("9")|| a.startsWith("4")|| a.startsWith("5")|| a.startsWith("6")|| a.startsWith("7")|| a.startsWith("8"))
-	{text1+="\n*Name field cannot start with numbers*";
+	{text1+="\nName field cannot start with numbers";
 count1++;}
     
 	if ((e.length>10 || e.length<10) && !(e==null|| e=="")){
-	text1+="\n*Phone Number field cannot be less or more than 10 digits*";
+	text1+="\nPhone Number field cannot be less or more than 10 digits";
 	count1++;}
 	
 		if ((d.length>10 || d.length<10) && !(d==null|| d=="")){
-	text1+="\n*National ID Field cannot be less or more than 10 digits*";
+	text1+="\nNational ID Field cannot be less or more than 10 digits";
 	count1++;}
 	
   
