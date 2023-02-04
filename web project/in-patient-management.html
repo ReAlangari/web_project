@@ -1,168 +1,147 @@
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <title>Hope Hospital- In-patient management</title>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="Hope.css">
-    <style>
-        .patients {
-            margin: auto;
-            max-width: 800px;
-            overflow: auto;
-            box-sizing: border-box;
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-        }
+function validateFOrm(){
+    
+var a = document.forms["form"]["name"].value;	
 
-        .In-patient {
-            margin: 5px;
-            border: 1px solid #ccc;
-            float: left;
-            width: 250px;
-            box-sizing: border-box;
-        }
+   count=0;
+   text="Please Fill ";
+    if (a == null || a == ""){
+    text+="Name, ";
+    count++;}
 
-        .id {
-            border: 1px solid #ccc;
-            font-size: 1.5em;
-            font-weight: bold;
-        }
+    if (a.startsWith("0") || a.startsWith("1")|| a.startsWith("2")|| a.startsWith("3")|| a.startsWith("9")|| a.startsWith("4")|| a.startsWith("5")|| a.startsWith("6")|| a.startsWith("7")|| a.startsWith("8"))
+    {text+="*Name field cannot start with numbers*";
+    count++;}
+  
+     if(count>0) {
+   alert(text+"Thank you");}	
+}
 
-        .In-patient {
-            position: relative;
-        }
+function pictureRc() {
+alert("Name: Sara Khalid\nAdmission:2022/11/20\nDischarge Date:2023/1/1")}
+
+
+const In_patient = document.querySelectorAll('.In-patient');
+console.log(In_patient
+)
+
+In_patient.forEach((patient, i) => {
 
 
 
-        legend {
-            font-size: 20px;
-            font-weight: bold;
-        }
+    if (patient.classList.contains('empty')) {
+        console.log(patient)
 
-        label {
-            font-size: 15px;
-            font-weight: bold;
-        }
+        document.getElementById("form").innerHTML += `
 
-        .Ward {
-            font-size: 20px;
-            font-weight: bold;
-            color: teal;
-        }
+       <div class="hidden" id="p-${i}">
+       <fieldset>
+       <span class="close" onclick="this.parentElement.style.display='none';">&times;</span> 
 
-        option {
-            font-size: 15px;
-        }
+       <legend style="text-align: center;">patient information</legend>
+       <ul>
+           <li>
+               <label for="name${i }" style="text-align: center;">Name:</label><br>
+               <input type="text" id="name${i}" name="name${i }" value="Enter the patient name" class="Name"><br>
+           </li>
+           <li>
+               <label for="Date${i }" style="text-align: center;">Discharge date:</label>
+               <input type="date" id="Date${i }" name="Date${i }"><br>
+           </li>
+           <li>
+           <button id="enter-${i}">Enter</button>
+           </li>
+       </ul>
+   </fieldset>
+   </div>
+      
+       
+    `; 
 
-        .form ul {
-            margin: 0;
-            padding: 0;
-            width: 100%;
-            background-color: #f1f1f1
-        }
+       console.log(  document.querySelector(`#enter-${i}`))
+        document.querySelector(`#enter-${i}`).addEventListener("click", () => {
+          
+                let a =document.getElementById(`name${i}`).value
+                let c =document.getElementById(`Date${i}`).value
 
-        .form ul li {
-            display: block;
-            color: #000;
-            padding: 4px 8px;
-        }
+          console.log(a)
+         count = 0;
+            text = "Please Fill ";
+            if (a == null || a == "") {
+                text += "Name, ";
+                count++;
+             
+            }
 
-        .Name {
-            color: gray;
-            text-align: center
-        }
-        .hidden{
-            display: none;
+            if (a.startsWith("0") || a.startsWith("1") || a.startsWith("2") || a.startsWith("3") || a.startsWith("9") || a.startsWith("4") || a.startsWith("5") || a.startsWith("6") || a.startsWith("7") || a.startsWith("8")) {
+                text += "*Name field cannot start with numbers*";
+                count++;
             
-        }
-        .close{
-		margin-left: 15px;
-		color: black;
-		font-weight: bold;
-		float: right;
-		font-size: 22px;
-		line-height: 20px;
-		cursor: pointer;
-		transition: 0.3s;
-	  }
-	  
-	  .close:hover {
-		color: black;
-	  }
-    </style>
-</head>
 
-<body>
-    <header>
-        <img src="images/logo2.png" alt="Hospital logo">
-        <h1>Hope Hospital</h1>
-        <nav>
-            <ul class="breadcrumb">
-                <li><a href="Home.html" accesskey="h">Home</a></li>
-                <li><a href="patients.html">Patients</a></li>
-                <li>in-patient management</li>
-            </ul>
-        </nav>
-    </header>
+            }
 
-    <main style="text-align: center;">
-        <label for="Ward" class="Ward">Ward:</label>
-        <select id="Ward" name="ward">
-            <option value="ER">ER</option>
-            <option value="Ward1">Ward1</option>
-            <option value="Ward2">Ward2</option>
-        </select><br>
-        <div class="patients">
-            <div class="In-patient occupied">
-                <img src="images/occupied-bed.png" alt="occupied bed" width="100" height="105" class="image"
-                    oncontextmenu="pictureRc()">
+            if (count > 0) {
+                alert(text+ "Thank you");
+             
+                document.getElementById("form").innerHTML = `
+                                <div class="hidden">
+                             
+                                <label for="name${i}">Patient name:</label>
+                                </br>
+                                <input type="text" id="name${i }" name="name${i }" disabled value="${a}">
+                                </br>
+                                <label for="Date${i }">discharge dates:</label>
+                                </br>
+                                <input type="date" id="Date${i }" name="Date${i}" disabled value="${c}">
+                                </br>
+                                  </div>
+                                `
+                                patient.children[0].src="images/occupied-bed.png"
+           }
+          
 
-                <div class="id"><span style="color:gray;">ID:1</span> </div>
-            </div>
-            <div class="In-patient empty">
-                <img src="images/empty1.png" alt="empty bed" width="100" height="100">
-                <div class="id">ID:3</div>
-            </div>
-            <div class="In-patient empty">
-                <img src="images/empty1.png" alt="empty bed" width="100" height="100">
-                <div class="id">ID:2</div>
-            </div>
-           
-        </div>
-        <div>
-            <div>
-                <br>
-                <br>
-                <br>
-            </div>
-            <div class="form"  id="form">
-               
-            </div>
-        </div>
+        });
 
+    }else{
+        
+        document.getElementById("form").innerHTML += `
 
-    </main>
-    <aside>
+        <div class="hidden" id="p-${i}">
+        <fieldset>
+        <span class="close" onclick="this.parentElement.style.display='none';">&times;</span> 
+ 
+        <legend style="text-align: center;">patient information</legend>
         <ul>
-            <li><a href="Hospital.html">Hospital</a></li>
-            <li><a href="doctors.html">Doctors</a></li>
-            <li class="active">Patients</li>
-            <li><a href="ER.html">ER</a></li>
-            <li><a href="reports.html">Reports</a></li>
-            <li><a href="nurses.html">Nurses</a></li>
-            <li><a href="staff.html">Staff</a></li>
-            <li><a href="settings.html">Settings</a></li>
-
+            <li>
+                <label for="name" style="text-align: center;">Name:</label><br>
+                <input type="text" id="name" name="name" value="Ahmad" class="Name" disable><br>
+            </li>
+            <li>
+                <label for="Date" style="text-align: center;">Discharge date:</label>
+                <input type="text" id="Date" name="Date" value="2023-3-3" disable><br>
+            </li>
+            <li>
+            <label for="Date" style="text-align: center;">admission date date:</label>
+            <input type="text" id="Date" name="Date" value="${new Date()}" disable><br>
+        </li>
         </ul>
-    </aside>
+    </fieldset>
+    </div>`
 
-    <footer>
-        <p> All rights reserved ©2022 Hope Hospital </p>
-    </footer>
-</body>
-<script src="in-patient-management1.js"> </script>
+    }
 
-</html>
+
+});
+
+In_patient.forEach((patient, i) => {
+    patient.addEventListener('click', () => {
+
+
+       
+        document.getElementById(`p-${i}`).classList.remove("hidden")
+      
+    });
+
+        
+
+})
