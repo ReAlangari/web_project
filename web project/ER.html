@@ -26,6 +26,8 @@ table, th, td {
 .styled-table th,
 .styled-table td {
     padding: 12px 15px;
+		color:#080808;
+
 }
 .styled-table tbody tr {
     border-bottom: 1px solid #dddddd;
@@ -42,7 +44,7 @@ table, th, td {
 </head>
 <body>
 
-<header>
+<header id='h'>
 <img src = "images/logo2.png" alt= "hospital logo">
 <h1>Hope Hospital</h1>
 <nav><ul class ="breadcrumb">
@@ -130,8 +132,21 @@ document.getElementById("p1").innerHTML = current_date;
 
  </ul>
  </aside>
- <footer>
+ <footer id='f'>
 <p>All rights reserved ©2022 Hope Hospital</p>
 </footer>
+	<script>
+ 
+ let GetTheme=JSON.parse(sessionStorage.getItem("pageTheme"));
+if(window.concole){
+concole.log(GetTheme);
+}
+
+if(GetTheme==="dark"){
+document.body.classList="dark-theme";
+}
+ 
+ 
+</script>
 </body>
 </html>
