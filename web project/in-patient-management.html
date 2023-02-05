@@ -96,7 +96,7 @@
 </head>
 
 <body>
-    <header>
+    <header id='h'>
         <img src="images/logo2.png" alt="Hospital logo">
         <h1>Hope Hospital</h1>
         <nav>
@@ -159,10 +159,17 @@
         </ul>
     </aside>
 
-    <footer>
+    <footer id='f'>
         <p> All rights reserved ©2022 Hope Hospital </p>
     </footer>
 </body>
-<script src="in-patient-management1.js"> </script>
+<script src="in-patient-management1.js"> let GetTheme=JSON.parse(sessionStorage.getItem("pageTheme"));
+if(window.concole){
+concole.log(GetTheme);
+}
+
+if(GetTheme==="dark"){
+document.body.classList="dark-theme";
+}</script>
 
 </html>
