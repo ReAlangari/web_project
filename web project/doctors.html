@@ -20,7 +20,7 @@
         }
         
         .float-container {
-            border: 3px solid #fff;
+            border: 3px solid var(--primary-color);
             padding: 20px;
             display: flex;
             flex-direction: column;
@@ -56,7 +56,7 @@
 </head>
 
 <body>
-    <header>
+    <header id='h'>
         <img src="images/logo2.png" alt="hospital logo">
         <h1>Hope Hospital</h1>
         <nav>
@@ -286,7 +286,7 @@
 
         </ul>
     </aside>
-    <footer>
+    <footer id='f'>
         <p>All rights reserved ©2022 Hope Hospital</p>
     </footer>
 
@@ -382,6 +382,16 @@
                 }
             }
         }
+	 let GetTheme=JSON.parse(sessionStorage.getItem("pageTheme"));
+if(window.concole){
+concole.log(GetTheme);
+}
+
+if(GetTheme==="dark"){
+document.body.classList="dark-theme";
+}
+ 
+    
     </script>
 </body>
 
