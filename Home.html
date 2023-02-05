@@ -141,7 +141,7 @@
 </head>
 
 <body>
-<header> 
+<header id='h'> 
 <img src ="images/logo2.png" alt="Hospital logo"  >
 <h1>Hope Hospital</h1> 
 </header>
@@ -182,6 +182,37 @@
 
 </div>
 
-<footer> <p>All rights reserved ©2022 Hope Hospital</p> </footer>
+<footer id='f'> <p>All rights reserved ©2022 Hope Hospital</p> </footer>
+    <script>
+var icn = document.getElementById('icon');
+icn.onclick=function(){
+var setTheme=document.body;
+setTheme.classList.toggle('dark-theme');
+var theme;
+if(setTheme.classList.contains('dark-theme')){
+if(window.concole){
+concole.log("darktheme");}
+theme="dark";
+}
+else{
+if(window.concole){
+concole.log("lighttheme");}
+theme="light";
+}
+sessionStorage.setItem("pageTheme",JSON.stringify(theme));
+
+}
+
+let GetTheme=JSON.parse(sessionStorage.getItem("pageTheme"));
+if(window.concole){
+concole.log(GetTheme);
+}
+
+if(GetTheme==="dark"){
+document.body.classList="dark-theme";
+}
+
+
+</script>
 </body>
 </html>
