@@ -218,5 +218,10 @@ right:60px;
 	content:url(images/sun.png);
 }
 
+	:root{
+	--primary-color:#fff;
+	--secondary-color:#000;
 	
+	
+}
 	
