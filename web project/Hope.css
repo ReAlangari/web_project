@@ -4,11 +4,11 @@ html {
 }
 
 body {
-    background: url(images/back.jpg) no-repeat fixed bottom;
+    background: var(--primary-color) url(images/back.jpg) no-repeat fixed bottom;
     background-size: 35% 55%;
     background-attachment: fixed;
     font-family: Courier, monospace;
-    color: #202020;
+    color: var(--secondary-color);
 }
 
 header {
@@ -53,7 +53,8 @@ footer {
     padding: 0%;
     margin: 0%;
     clear: both;
-	font-family: Courier, monospace;
+    color: var(--secondary-color);
+    font-family: Courier, monospace;
 }
 
 nav {
@@ -97,7 +98,7 @@ font-weight:bold;
 
 aside li:hover:not(.active) {
     background-color: #555;
-    color: white;
+    color:var(--primary-color);
 	
 }
 
@@ -194,10 +195,7 @@ top:40px;
 right:60px;	
 }
 
-.light-theme{
-	--primary-color: #fff;
-	--secondary-color: #000;
-}
+
 
 .dark-theme{
 	--primary-color:#242424;
