@@ -199,7 +199,8 @@ caption {
     --secondary-color: #FAFAFA;
     background-image: none;
     font-family: fantasy;
-    font-size: 90%;
+    font-size: 100%;
+	
 }
 
     .dark-theme .breadcrumb {
@@ -227,6 +228,9 @@ caption {
     color: #242424;
     font-size: 90%;
 }
+   .dark-theme a {
+            color:gray;
+        }
 
 @media screen and (max-width: 896px) {
 
@@ -245,8 +249,9 @@ caption {
         --secondary-color: #FAFAFA;
         background-image: none;
         font-family: fantasy;
-        font-size: 65%;
+		font-size:100%;
         grid-auto-flow: column;
+		
     }
 
         .dark-theme .breadcrumb {
@@ -267,6 +272,9 @@ caption {
         .dark-theme #icon {
             content: url(images/sun.png);
             grid-auto-flow: column;
+        }
+		   .dark-theme a {
+            color:gray;
         }
 
     :root {
