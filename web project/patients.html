@@ -13,7 +13,7 @@ width:auto;
 background-color: gray; 
 border-style: outset;
 border-color:rgb(225, 235, 225);
-color:white; 
+color:var(--primary-color); 
 position:relative;
 top:120px;
 padding:6px 9px ;
@@ -37,7 +37,7 @@ main{text-align:center; height:500px;}
 </style>
 </head>
 <body>
-<header>
+<header id='h'>
 <img src = "images/logo2.png" alt= "hospital logo">
 <h1>Hope Hospital</h1>
 <nav><ul class ="breadcrumb">
@@ -64,8 +64,21 @@ main{text-align:center; height:500px;}
 
  </ul>
  </aside>
- <footer>
+ <footer id='f'>
 <p>All rights reserved ©2022 Hope Hospital</p>
 </footer>
+<script>
+ 
+ let GetTheme=JSON.parse(sessionStorage.getItem("pageTheme"));
+if(window.concole){
+concole.log(GetTheme);
+}
+
+if(GetTheme==="dark"){
+document.body.classList="dark-theme";
+}
+ 
+ 
+</script>
 </body>
 </html>
