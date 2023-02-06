@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"> 
+<html lang="en">
 <head>
     <title>Hope Hospital- Home</title>
     <meta charset="utf-8">
@@ -14,7 +14,6 @@
             overflow: auto;
             display: flex;
             flex-wrap: wrap;
-
         }
 
         .home {
@@ -59,6 +58,7 @@
                 position: center;
             }
         }
+
         @media screen and (max-width: 896px) {
             .home {
                 margin: 1px;
@@ -135,86 +135,83 @@
                 grid-auto-flow: column;
             }
         }
-
-
     </style>
 </head>
 
 <body>
-<header id='h'> 
-<img src ="images/logo2.png" alt="Hospital logo"  >
-<h1>Hope Hospital</h1> 
-<img src="images/moon.png" id="icon" >
- 
-</header>
+    <header id='h'>
+        <img src="images/logo2.png" alt="Hospital logo">
+        <h1>Hope Hospital</h1>
+        <img src="images/moon.png" id="icon">
 
-<div class="Home">
-<div class="home">
-<img src ="images/Hospital1.png" alt="Hospital icon" width="200" height="200" >
-<a href="Hospital.html">  Hospital  </a> 
-</div>
-<div class="home">
-<img src ="images/doctor.png" alt="Doctor icon" width="200" height="200" >
-<a href="doctors.html"> Doctors </a> 
-</div>
-<div class="home">
-<img src ="images/patient.png" alt="patient icon" width="200" height="200" >
-<a href="patients.html"> Patients </a>
-</div>
-<div class="home">
-<img src ="images/Emargency.png" alt="Emergency icon" width="200" height="200" >
-<a href="ER.html"> ER </a>
-</div>
-<div class="home">
-<img src ="images/nurse.png" alt="nurse icon" width="200" height="200" >
-<a href="nurses.html"> Nurses </a>
-</div>
-<div class="home">
-<img src ="images/staff.png" alt="staff icon" width="200" height="200" >
-<a href="staff.html"> Staff</a>
-</div>
-<div class="home">
-<img src ="images/setting.png" alt="setting icon" width="200" height="200" >
-<a href="settings.html"> Settings </a>
-</div>
-<div class="home">
-<img src ="images/report.png" alt="report icon" width="200" height="200" >
-<a href="reports.html"> Reports</a>
-</div>
+    </header>
 
-</div>
+    <div class="Home">
+        <div class="home">
+            <img src="images/Hospital1.png" alt="Hospital icon" width="200" height="200">
+            <a href="Hospital.html">  Hospital  </a>
+        </div>
+        <div class="home">
+            <img src="images/doctor.png" alt="Doctor icon" width="200" height="200">
+            <a href="doctors.html"> Doctors </a>
+        </div>
+        <div class="home">
+            <img src="images/patient.png" alt="patient icon" width="200" height="200">
+            <a href="patients.html"> Patients </a>
+        </div>
+        <div class="home">
+            <img src="images/Emargency.png" alt="Emergency icon" width="200" height="200">
+            <a href="ER.html"> ER </a>
+        </div>
+        <div class="home">
+            <img src="images/nurse.png" alt="nurse icon" width="200" height="200">
+            <a href="nurses.html"> Nurses </a>
+        </div>
+        <div class="home">
+            <img src="images/staff.png" alt="staff icon" width="200" height="200">
+            <a href="staff.html"> Staff</a>
+        </div>
+        <div class="home">
+            <img src="images/setting.png" alt="setting icon" width="200" height="200">
+            <a href="settings.html"> Settings </a>
+        </div>
+        <div class="home">
+            <img src="images/report.png" alt="report icon" width="200" height="200">
+            <a href="reports.html"> Reports</a>
+        </div>
 
-<footer id='f'> <p>All rights reserved ©2022 Hope Hospital</p> </footer>
-    <script>
-var icn = document.getElementById('icon');
-icn.onclick=function(){
-var setTheme=document.body;
-setTheme.classList.toggle('dark-theme');
-var theme;
-if(setTheme.classList.contains('dark-theme')){
-if(window.concole){
-concole.log("darktheme");}
-theme="dark";
-}
-else{
-if(window.concole){
-concole.log("lighttheme");}
-theme="light";
-}
-sessionStorage.setItem("pageTheme",JSON.stringify(theme));
+    </div>
 
-}
+    <footer id='f'> <p>All rights reserved ©2022 Hope Hospital</p> </footer>
+    <script>var icn = document.getElementById('icon');
+        icn.onclick = function () {
+            var setTheme = document.body;
+            setTheme.classList.toggle('dark-theme');
+            var theme;
+            if (setTheme.classList.contains('dark-theme')) {
+                if (window.concole) {
+                    concole.log("darktheme");
+                }
+                theme = "dark";
+            }
+            else {
+                if (window.concole) {
+                    concole.log("lighttheme");
+                }
+                theme = "light";
+            }
+            sessionStorage.setItem("pageTheme", JSON.stringify(theme));
 
-let GetTheme=JSON.parse(sessionStorage.getItem("pageTheme"));
-if(window.concole){
-concole.log(GetTheme);
-}
+        }
 
-if(GetTheme==="dark"){
-document.body.classList="dark-theme";
-}
+        let GetTheme = JSON.parse(sessionStorage.getItem("pageTheme"));
+        if (window.concole) {
+            concole.log(GetTheme);
+        }
 
+        if (GetTheme === "dark") {
+            document.body.classList = "dark-theme";
+        }</script>
 
-</script>
 </body>
 </html>
