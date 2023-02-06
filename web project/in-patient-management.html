@@ -160,11 +160,12 @@
         </ul>
     </aside>
 
-    <footer id='f'>
+    footer id='f'>
         <p> All rights reserved ©2022 Hope Hospital </p>
     </footer>
-</body>
-<script src="in-patient-management1.js"> let GetTheme=JSON.parse(sessionStorage.getItem("pageTheme"));
+<script src="in-patient-management1.js"> </script>
+<script>
+let GetTheme=JSON.parse(sessionStorage.getItem("pageTheme"));
 if(window.concole){
 concole.log(GetTheme);
 }
@@ -172,5 +173,5 @@ concole.log(GetTheme);
 if(GetTheme==="dark"){
 document.body.classList="dark-theme";
 }</script>
-
+</body>
 </html>
