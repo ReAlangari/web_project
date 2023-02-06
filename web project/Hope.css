@@ -205,6 +205,9 @@ right:60px;
 	font-size: 90%;
 	
 }
+.dark-theme .breadcrumb {
+    color:black;
+}
 .dark-theme #h ,.dark-theme #f{
 	background-color: #4b1680;
 }
