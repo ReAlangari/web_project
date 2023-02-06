@@ -229,6 +229,7 @@ caption {
 }
 
 @media screen and (max-width: 896px) {
+
     #icon {
         width: 30px;
         height: 30px;
@@ -244,7 +245,7 @@ caption {
         --secondary-color: #FAFAFA;
         background-image: none;
         font-family: fantasy;
-        font-size: 45%;
+        font-size: 65%;
         grid-auto-flow: column;
     }
 
@@ -269,7 +270,6 @@ caption {
         }
 
     :root {
-        background-color: #fff;
         --secondary-color: #000;
         grid-auto-flow: column;
     }
@@ -279,6 +279,7 @@ caption {
         font-size: 45%;
         grid-auto-flow: column;
     }
+
     body {
         background: var(--primary-color) url(images/back.jpg) no-repeat fixed bottom;
         background-size: 35% 55%;
@@ -289,3 +290,5 @@ caption {
     }
 
     }
+
+
