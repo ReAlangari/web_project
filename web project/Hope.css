@@ -225,3 +225,9 @@ right:60px;
 	
 }
 	
+.dark-theme p:not(footer p) {
+		
+		color:#242424;
+		font-size:90%;
+		
+	}
