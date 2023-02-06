@@ -31,7 +31,7 @@
 	if (c == null || c == ""){
 	text+="Martial Status, ";
 	count++;}
-	 if (f == null || f == ""){
+	 if (f == null || f == "" || f=="neighborhood/city"){
 	text+="Address, ";
 	count++;}
 	 if (g == null || g == ""){
