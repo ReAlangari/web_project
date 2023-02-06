@@ -1,14 +1,14 @@
 
 	
 const In_patient = document.querySelectorAll('.In-patient');
-console.log(In_patient)
+console.log(In_patient);
 
 In_patient.forEach((patient, i) => {
 
 
 
     if (patient.classList.contains('empty')) {
-        console.log(patient)
+        console.log(patient);
 
         document.getElementById("form").innerHTML += `
 
@@ -19,12 +19,12 @@ In_patient.forEach((patient, i) => {
        <legend style="text-align: center;">patient information</legend>
        <ul>
            <li>
-               <label for="name${i }" style="text-align: center;">Name:</label><br>
-               <input type="text" id="name${i}" name="name${i }" value="Enter the patient name" class="Name"><br>
+               <label for="name${i}" style="text-align: center;">Name:</label><br>
+               <input type="text" id="name${i}" name="name${i}" onfocus="this.value=''" value="Enter the patient name" class="Name"><br>
            </li>
            <li>
-               <label for="Date${i }" style="text-align: center;">Discharge date:</label>
-               <input type="date" id="Date${i }" name="Date${i }"><br>
+               <label for="Date${i}" style="text-align: center;">Discharge date:</label>
+               <input type="date" id="Date${i }" name="Date${i}"><br>
            </li>
            <li>
            <button id="enter-${i}">Enter</button>
@@ -34,21 +34,21 @@ In_patient.forEach((patient, i) => {
    </div>
       
        
-    `; 
+    `
 
-       console.log(  document.querySelector(`#enter-${i}`))
+       console.log(document.querySelector(`#enter-${i}`));
         document.querySelector(`#enter-${i}`).addEventListener("click", () => {
           
-                let a =document.getElementById(`name${i}`).value
-                let c =document.getElementById(`Date${i}`).value
+                let a =document.getElementById(`name${i}`).value;
+                let c =document.getElementById(`Date${i}`).value;
 
-             console.log(a)
+             console.log(a);
              count = 0;
 		     count1=0;
-		     text1=""
+		     text1="";
              text = "Please Fill ";
-			 date= new Date(c)
-            if (a == null || a == "") {
+			 date= new Date(c);
+            if (a == null || a == "" || a=="Enter the patient name") {
                 text += "Name, ";
                 count++;
              
@@ -74,7 +74,7 @@ In_patient.forEach((patient, i) => {
 	         alert(text1);}
              if(count==0&&count1==0){
                 document.getElementById("form").innerHTML = `
-                                <div class="hidden">
+                                <div class="hidden" id="p-${i}">
                              
                                 <label for="name${i}">Patient name:</label>
                                 </br>
@@ -84,10 +84,10 @@ In_patient.forEach((patient, i) => {
                                 </br>
                                 <input type="date" id="Date${i }" name="Date${i}" disabled value="${c}">
                                 </br>
-                                  </div>
-                                `
+                                  </div> 
+                                ` ;
 								
-                                patient.children[0].src="images/occupied-bed.png"}
+                                patient.children[0].src="images/occupied-bed.png";}
            
           
 
@@ -105,19 +105,19 @@ In_patient.forEach((patient, i) => {
         <ul>
             <li>
                 <label for="name" style="text-align: center;">Name:</label><br>
-                <input type="text" id="name" name="name" value="Ahmad" class="Name" disable><br>
+                <input type="text" id="name" name="name" value="Ahmad" class="Name" readonly disabled><br>
             </li>
             <li>
                 <label for="Date" style="text-align: center;">Discharge date:</label>
-                <input type="text" id="Date" name="Date" value="2023-3-3" disable><br>
+                <input type="text" id="Date" name="Date" value="2023-3-3" readonly disabled><br>
             </li>
             <li>
-            <label for="Date" style="text-align: center;">admission date date:</label>
-            <input type="text" id="Date" name="Date" value="${new Date()}" disable><br>
+            <label for="Date" style="text-align: center;">admission date:</label>
+            <input type="text" id="Date" name="Date" value="${new Date()}"readonly disabled><br>
         </li>
         </ul>
     </fieldset>
-    </div>`
+    </div>` ;
 
     }
 
@@ -128,7 +128,7 @@ In_patient.forEach((patient, i) => {
 
 
        
-        document.getElementById(`p-${i}`).classList.remove("hidden")
+        document.getElementById(`p-${i}`).classList.remove("hidden");
       
     });
 
