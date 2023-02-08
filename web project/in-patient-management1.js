@@ -20,7 +20,7 @@ In_patient.forEach((patient, i) => {
        <ul>
            <li>
                <label for="name${i}" style="text-align: center;">Name:</label><br>
-               <input type="text" id="name${i}" name="name${i}" onfocus="this.value=''; this.style.color='black'" value="Enter the patient name" class="Name"><br>
+               <input type="text" id="name${i}" name="name${i}" onfocus="this.value=''" value="Enter the patient name" class="Name"><br>
            </li>
            <li>
                <label for="Date${i}" style="text-align: center;">Discharge date:</label>
@@ -73,26 +73,22 @@ In_patient.forEach((patient, i) => {
              if(count1>0)
 	         alert(text1);}
              if(count==0&&count1==0){
-               document.getElementById("form").innerHTML = `
+				 var date=new Date();
+                 var current_date = date.getDate()+"/"+(date.getMonth()+1)+"/"+ date.getFullYear() ;	
+                document.getElementById("form").innerHTML = `
                                 <div class="hidden" id="p-${i}">
-                        <fieldset>
-                          <span class="close" onclick="this.parentElement.style.display='none';">&times;</span>
-						  <legend style="text-align: center;">patient information</legend>
-                           <ul>
-                                <li>
+                             
                                 <label for="name${i}">Patient name:</label>
                                 </br>
                                 <input type="text" id="name${i }" name="name${i }" disabled value="${a}">
                                 </br>
-                                </li>
-                                 <li> 
-							   <label for="Date${i }">discharge dates:</label>
+                                <label for="Date${i }">discharge date:</label>
                                 </br>
                                 <input type="date" id="Date${i }" name="Date${i}" disabled value="${c}">
-								</br> </li>
-                                
-								 </ul>
-    </fieldset>
+							
+                                </br>
+								<label for="Date1${i }">admission date:</label>
+								<input type="text" id="Date1${i }" name="Date1${i}" value="${current_date}" readonly disabled>
                                   </div> 
                                 ` ;
 								
@@ -145,4 +141,4 @@ In_patient.forEach((patient, i) => {
 
 });
 	
-		
+	
